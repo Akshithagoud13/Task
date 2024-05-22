@@ -1,0 +1,42 @@
+.container{
+    border: 1px solid black;
+    width: 500px;
+    margin: 150px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.container soan{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    margin-top: 0px;
+}
+#checkboxcontainer,
+.taxcontainer{
+    display: flex;
+}
+p{
+    padding: 0px;
+}
+button{
+    width: 150px;
+    color: antiquewhite;
+    background-color: blue;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 200px;
+}
+input [type="text"]{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+}
+#amountlabel,
+#personLabel{
+    visibility: hidden;
+    color: brown;
+}

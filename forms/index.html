@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form class="form" onsubmit="return validateForm()">
+    <span class="signup">Sign Up</span>
+    <input type="text" placeholder="First Name" class="form--input" id="firstName" name="firstName">
+    <label for=""id="firstNameError" class="error">First name is required</label><br>
+    <input type="text" placeholder="Last Name" class="form--input" id="lastName" name="lastName">
+    <label id="lastNameError" class="error">Last name is required</label><br>
+    <input type="text" placeholder="Phone Number" class="form--input" id="phoneNumber" name="phoneNumber">
+    <label id="phoneNumberError" class="error">Phone number must start with 6, 7, 8, or 9 and be 10 digits</label><br>
+    <input type="password" placeholder="Password" class="form--input" id="password" name="password">
+    <label id="passwordError" class="error">Password must between 8 to 15 characters</label><br>
+    <input type="password" placeholder="Confirm password" class="form--input" id="confirmPassword" name="confirmPassword">
+    <label id="confirmPasswordError" class="error">Passwords do not match</label><br>
+    <button class="form--submit" id="form">Sign up</button>
+</form>
+<script src="./app.js"></script>
+</body>
+</html>
